@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6121wov7gxqx"]
+
+[ext_resource type="PackedScene" uid="uid://bgv1o81pqnvl5" path="res://player.tscn" id="1_625sx"]
+[ext_resource type="PackedScene" uid="uid://qici5qb885yi" path="res://wall.tscn" id="2_n6vfn"]
+
+[node name="Main" type="Node2D"]
+
+[node name="LeftPlayerCharBody" parent="." instance=ExtResource("1_625sx")]
+position = Vector2(50, 299)
+
+[node name="RightPlayerCharBody" parent="." instance=ExtResource("1_625sx")]
+position = Vector2(1087, 300)
+player_id = 2
+
+[node name="UpperWall" parent="." instance=ExtResource("2_n6vfn")]
+
+[node name="LowerWall" parent="." instance=ExtResource("2_n6vfn")]
+position = Vector2(0, 618)
