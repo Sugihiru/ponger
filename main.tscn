@@ -5,14 +5,18 @@
 
 [node name="Main" type="Node2D"]
 
-[node name="LeftPlayerCharBody" parent="." instance=ExtResource("1_625sx")]
-position = Vector2(50, 299)
+[node name="LeftPlayerPaddle" parent="." instance=ExtResource("1_625sx")]
+position = Vector2(50, 347)
 
-[node name="RightPlayerCharBody" parent="." instance=ExtResource("1_625sx")]
-position = Vector2(1087, 300)
+[node name="RightPlayerPaddle" parent="." instance=ExtResource("1_625sx")]
+position = Vector2(1230, 347)
+
+[node name="PlayerCharBody" parent="RightPlayerPaddle" index="0"]
 player_id = 2
 
 [node name="UpperWall" parent="." instance=ExtResource("2_n6vfn")]
 
 [node name="LowerWall" parent="." instance=ExtResource("2_n6vfn")]
-position = Vector2(0, 618)
+position = Vector2(0, 690)
+
+[editable path="RightPlayerPaddle"]
