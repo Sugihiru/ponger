@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://dpnqy41cbpduy"]
+
+[ext_resource type="Script" path="res://Ball.gd" id="1_xt6h6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3m21n"]
+size = Vector2(2, 2)
+
+[sub_resource type="Gradient" id="Gradient_gpabm"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_l615a"]
+gradient = SubResource("Gradient_gpabm")
+width = 1
+
+[node name="Ball" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+scale = Vector2(10, 10)
+script = ExtResource("1_xt6h6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("RectangleShape2D_3m21n")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+scale = Vector2(2, 2)
+texture = SubResource("GradientTexture1D_l615a")

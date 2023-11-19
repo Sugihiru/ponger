@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://c6121wov7gxqx"]
+[gd_scene load_steps=4 format=3 uid="uid://c6121wov7gxqx"]
 
 [ext_resource type="PackedScene" uid="uid://bgv1o81pqnvl5" path="res://player.tscn" id="1_625sx"]
 [ext_resource type="PackedScene" uid="uid://qici5qb885yi" path="res://wall.tscn" id="2_n6vfn"]
+[ext_resource type="PackedScene" uid="uid://dpnqy41cbpduy" path="res://ball.tscn" id="3_3scu6"]
 
 [node name="Main" type="Node2D"]
 
@@ -18,5 +19,8 @@ player_id = 2
 
 [node name="LowerWall" parent="." instance=ExtResource("2_n6vfn")]
 position = Vector2(0, 690)
+
+[node name="Ball" parent="." instance=ExtResource("3_3scu6")]
+position = Vector2(640, 347)
 
 [editable path="RightPlayerPaddle"]
