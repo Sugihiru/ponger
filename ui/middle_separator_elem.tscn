@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://5h4plg3apclf"]
+
+[node name="MiddleSeparatorElem" type="ColorRect"]
+custom_minimum_size = Vector2(7, 25)
+size_flags_horizontal = 4
+size_flags_vertical = 4
